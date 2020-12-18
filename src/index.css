@@ -447,3 +447,20 @@ header.hero h2 {
       margin: 10px;
   }
 }
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px 250px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+}

@@ -21,7 +21,7 @@ export default class BudgetsPage extends Component {
 
   componentDidMount() {
     this.retrieveBudgets();
-    UserService.getUserBoard().then(
+    UserService.getUserContent().then(
       response => {
         this.setState({
           content: response.data
@@ -90,7 +90,6 @@ render() {
       budgets.map((budget) => (
         budgetValues.push(budget.budget)
     ));
-        console.log("LOGGGGGGG: ", budgets)
       if(budgets.length !== 0) {
         var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
@@ -181,7 +180,7 @@ render() {
             ) : (
                 <div>
                 <br />
-                <p>Please click on a Budget...</p>
+                <p>Please click on a Budget!</p>
                 </div>
             )}
             </div>

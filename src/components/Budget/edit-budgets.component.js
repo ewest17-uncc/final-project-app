@@ -162,7 +162,7 @@ export default class Budget extends Component {
         ) : (
           <div>
             <br />
-            <p>Please click on a Budget...</p>
+            <p>Please click on a Budget!</p>
           </div>
         )}
       </div>

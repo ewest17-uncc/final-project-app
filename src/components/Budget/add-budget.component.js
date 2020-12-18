@@ -47,7 +47,6 @@ export default class AddBudget extends Component {
       tags: this.state.tags,
       userId: currentUser.id
     };
-
     BudgetDataService.create(data)
       .then(response => {
         this.setState({

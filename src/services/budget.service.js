@@ -20,14 +20,6 @@ class BudgetDataService {
   delete(id) {
     return http.delete(`/budget/${id}`);
   }
-
-  deleteAll() {
-    return http.delete(`/budget`);
-  }
-
-  findByTitle(title) {
-    return http.get(`/budget?title=${title}`);
-  }
 }
 
 export default new BudgetDataService();
